@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	
+	<TableLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:stretchColumns="1">
+	
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			
+			<TableRow>
+					<TextView android:text="" />
+					<TextView android:text="" />
+			</TableRow>
+			
+	
+		<TableRow>
+			<TextView 
+			android:text="@string/edittext_username_text" 
+			android:id="@+id/TextView"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textColor="#0000ff"
+			/>
+			
+			<EditText 
+			android:hint="@string/edittext_username_hint"
+			android:text="" 
+			android:id="@+id/usernameEditText"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:maxLength="11"/>
+		</TableRow>
+
+
+		<TableRow>
+			<TextView 
+			android:text="@string/edittext_password_text" 
+		
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textColor="#0000ff"
+			/>
+			
+			<EditText 
+			android:text="" 
+			android:hint="@string/edittext_password_hint"
+			android:id="@+id/passwordEditText"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:inputType="textPassword"
+			android:maxLength="11"/>
+			
+		</TableRow>
+		<TableRow>
+		<CheckBox  
+            android:id="@+id/rememberPasswordCheckBox"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_marginLeft="12dip"  
+            android:text="@string/rememberPassword"  
+            android:textColor="#000000" />  
+  
+        <CheckBox  
+            android:id="@+id/autologinCheckBox"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_marginLeft="12dip"  
+            android:text="@string/autoLogin"  
+            android:textColor="#000000" /> 
+		</TableRow>
+		<TableRow 
+			android:gravity="right">
+			
+			<Button 
+				android:text="@string/cancelButton" 
+				android:id="@+id/cancelButton"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+			<Button 
+				android:text="@string/loginButton" 
+				android:id="@+id/loginButton"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+	
+		</TableRow>
+
+	</TableLayout>
+</LinearLayout>

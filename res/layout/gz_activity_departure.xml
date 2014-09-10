@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arrivebackground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00" >
+
+        <ImageButton
+            android:id="@+id/departurereturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/fachehome" />
+
+        <ImageButton
+            android:id="@+id/departureshow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+             android:layout_weight="1"
+            android:background="@drawable/fache" />
+
+        <ImageButton
+            android:id="@+id/departurephoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/fachepaizhao" />
+
+        <ImageButton
+            android:id="@+id/departurescan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/fachesaomiao" />
+
+        <ImageButton
+            android:id="@+id/departuresave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/fachebaocun" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/departurewelcode"
+      android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/departuredonu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="订单ID"
+            android:inputType="numberSigned"
+            android:imeOptions="actionDone"
+            android:textColor="#000000" 
+            android:focusable="true">
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/departuredodetail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+    </ListView>
+    
+	
+    
+    <ImageView
+        android:id="@+id/departure_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.31" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_weight="0.15" >
+
+    </LinearLayout>
+
+</LinearLayout>

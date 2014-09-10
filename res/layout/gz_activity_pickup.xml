@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arrivebackground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00" >
+
+        <ImageButton
+            android:id="@+id/pickupreturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tihuohome" />
+
+        <ImageButton
+            android:id="@+id/pickupshow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+             android:layout_weight="1"
+            android:background="@drawable/tihuogz" />
+
+        <ImageButton
+            android:id="@+id/pickupphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tihuopaizhao" />
+
+        <ImageButton
+            android:id="@+id/pickupscan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tihuosaomiao" />
+
+        <ImageButton
+            android:id="@+id/pickupsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tihuobaocun" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pickupwelcode"
+     	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/pickupdonu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="订单ID"
+            android:inputType="text|number"
+            android:textColor="#000000" 
+            android:focusable="true">
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/pickupdodetail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+
+    </ListView>
+
+    
+
+    <ImageView
+        android:id="@+id/pickup_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.31" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_weight="0.20" >
+
+    </LinearLayout>
+
+</LinearLayout>

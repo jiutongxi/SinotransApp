@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arrivebackground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00" >
+
+        <ImageButton
+            android:id="@+id/dispatchreturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/signsave"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+             android:layout_weight="1"
+            android:background="@drawable/paisongfache" />
+
+        <ImageButton
+            android:id="@+id/dispatchtakephoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/paizhao" />
+
+        <ImageButton
+            android:id="@+id/dispatchscan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/saomiao" />
+
+        <ImageButton
+            android:id="@+id/dispatchsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/baocun" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dispatchwelcode"
+      android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/dispatchdonu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="订单号"
+            android:inputType="text|number"
+             android:textColor="#000000" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/dispatchdodetail"
+        android:layout_width="match_parent"
+        android:layout_height="124dp" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <Spinner
+            android:id="@+id/dispatchexception"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+             android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+
+        <EditText
+            android:id="@+id/dispatchexcdes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="异常描述" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dispatphoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.31" />
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arrivebackground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00" >
+
+        <ImageButton
+            android:id="@+id/destinationcityreturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/mudichengshihome" />
+
+        <ImageButton
+            android:id="@+id/destinationcityshow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+             android:layout_weight="1"
+            android:background="@drawable/mudichengshi" />
+
+        <ImageButton
+            android:id="@+id/destinationcityphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/mudichengshipaizhao" />
+
+        <ImageButton
+            android:id="@+id/destinationcityscan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/mudichengshisaomiao" />
+
+        <ImageButton
+            android:id="@+id/destinationcitysave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/mudichengshibaocun" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/destinationcitywelcode"
+      android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/destinationcitydonu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="订单ID"
+            android:inputType="text|number"
+            android:textColor="#000000" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/destinationcitydodetail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+
+    </ListView>
+
+    
+
+    <ImageView
+        android:id="@+id/destinationcity_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.31" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_weight="0.20" >
+
+    </LinearLayout>
+</LinearLayout>
